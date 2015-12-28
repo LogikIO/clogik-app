@@ -2,26 +2,29 @@
   "ProjectName": "AppBuilder1",
   "ProjectGuid": "830ed9ae-9f72-4c9d-9c7f-2fa4fb194e03",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.PushNotificationApp",
-  "DisplayName": "Deliveries",
-  "Author": "",
-  "Description": "Deliveries",
+  "AppIdentifier": "c.logik.app",
+  "DisplayName": "College Logik",
+  "Author": "logikio",
+  "Description": "College Logik",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",
     "2"
   ],
-  "iOSBackgroundMode": [],
+  "iOSBackgroundMode": [
+    "location",
+    "fetch",
+    "remote-notification"
+  ],
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
-  "FrameworkVersion": "3.7.0",
+  "FrameworkVersion": "4.0.0",
   "AndroidPermissions": [],
   "DeviceOrientations": [
-    "Portrait",
-    "Landscape"
+    "Portrait"
   ],
-  "AndroidHardwareAcceleration": "false",
-  "iOSStatusBarStyle": "Default",
+  "AndroidHardwareAcceleration": "True",
+  "iOSStatusBarStyle": "BlackTranslucent",
   "Framework": "Cordova",
   "WP8TileTitle": "",
   "WP8Publisher": "",
@@ -38,9 +41,43 @@
     "ID_RESOLUTION_HD720P"
   ],
   "CorePlugins": [
-    "org.apache.cordova.file",
-    "org.apache.cordova.file-transfer",
-    "org.apache.cordova.network-information"
+    "com.aerserv.sdk.plugins.phonegap@1.2",
+    "com.amazon.aws@1.1.0",
+    "com.couchbase.lite.phonegap@1.0.5",
+    "com.phonegap.plugins.PushPlugin@3.0.5",
+    "com.synconset.imagepicker@1.0.8",
+    "com.telerik.feedback@2.0.0",
+    "com.telerik.mobiletesting@2.5.0.4",
+    "com.telerik.plugin.telerikanalytics@3.3.2",
+    "com.telerik.plugins.nativepagetransitions@0.5.6",
+    "com.telerik.plugins.wkwebview@0.6.8",
+    "cordova-plugin-camera",
+    "cordova-plugin-console",
+    "cordova-plugin-device",
+    "cordova-plugin-file",
+    "cordova-plugin-file-transfer",
+    "cordova-plugin-geolocation",
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-media",
+    "cordova-plugin-network-information",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-whitelist",
+    "hu.dpal.phonegap.plugins.SpinnerDialog@1.3.1",
+    "nl.x-services.plugins.actionsheet@1.1.7",
+    "org.apache.cordova.labs.keyboard"
   ],
-  "CordovaPluginVariables": {}
+  "CordovaPluginVariables": {
+    "com.telerik.feedback": {
+      "API_KEY": "f6xs963aynsyc8sq",
+      "API_URL": "https://platform.telerik.com/feedback/api/v1",
+      "ENABLE_SHAKE": "True"
+    },
+    "com.telerik.plugin.telerikanalytics": {
+      "AUTO_TRACK_EXCEPTIONS": "True",
+      "AUTO_TRACK_KENDO_EVENTS": "True",
+      "PRODUCT_ID": "f7d909840bfd4bc8afb888f7eb33a462"
+    }
+  },
+  "iOSDeploymentTarget": "8.4"
 }
